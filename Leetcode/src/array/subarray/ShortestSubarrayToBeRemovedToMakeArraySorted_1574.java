@@ -1,6 +1,6 @@
 package array.subarray;
 
-public class ShortestSubarrayToBeRemovedToMakeArraySorted {
+public class ShortestSubarrayToBeRemovedToMakeArraySorted_1574{
 	
 	 public int findLengthOfShortestSubarray(int[] arr) {
 	        
@@ -12,7 +12,6 @@ public class ShortestSubarrayToBeRemovedToMakeArraySorted {
 	        while(j>=1 && arr[j]>=arr[j-1])j--;
 	        
 	        if(i==n-1)return 0;
-	        if(j==0) return 1;
 	        int res =  Math.min(n-i-1, j);
 	        int start = 0;
 	        int end = j;
